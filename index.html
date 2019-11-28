@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger War</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <h1><span>B</span>urger War</h1>
+            </div>
+             <div class="nav-links" id="nav-link" >
+                    <i class="fa fa-close" onclick="closeMenu ()"></i>
+
+               <ul>
+                   <a href="#"> <li>HOME</li></a>
+                   <a href="#"> <li>ABOUT</li></a>
+                   <a href="#"> <li>MENU</li></a>
+                   
+
+                </ul>
+               <button type="button" class="btn">SIGN UP</button>
+             </div>   
+             <i class="fa fa-bars" onclick="showMenu ()"></i>
+        </div>
+        <div class="banner-title">
+            <h1> Food <span>Doesn't have<br> a regligion.</span> It is a regligion </h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                    <i class="fa fa-th-list" ></i>
+                    <li class="fa fa-search"></li>
+            </div>
+            <div class="social-icons">
+
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="notifications">
+              <div class="contents">
+                  <small>subscribe Easy Youtube channer and watch
+                       about new burders.</small>
+                       <p> <a href="">PREV</a> <a href=""> NEXT</a></p>
+              </div>
+              <div class="notification-img">
+                <video   controls>
+                    <source src="../burger site/burger.mp4">
+                </video>
+              </div>
+
+        </div>
+    </div>
+    <script> 
+      function showMenu(){
+        var show = document.getElementById("nav-link");
+
+              show.style.right="0px";
+      }
+
+      function closeMenu(){
+        var show = document.getElementById("nav-link");
+
+              show.style.right="-200px";
+      }
+
+    </script>
+    <script src="../burger site/jquery-1.2.min.js"></script>
+</body>
+</html>
